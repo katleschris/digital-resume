@@ -1,0 +1,147 @@
+.grid-container{
+    display: grid;
+    gap: 5px 5px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: lightgrey;
+    height: 850px;
+}
+
+.third{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.twothirds{
+    grid-column: 2/4;
+    grid-row: 1/4;
+    background-color: lightgrey;
+    grid-row: 1/4;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.third-content{
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto auto;
+    /* background-color: red; */
+    height: 800px;
+    grid-template-areas: 
+    "picture"
+    "picture"
+    "bio"
+    "skills"
+    "languages";
+}
+
+.picture{
+    grid-area: picture;
+    background-color: #757575;
+    background-image: url(images/headshot.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    color: blanchedalmond;
+}
+
+.bio{
+    grid-area: bio;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.skills{
+    grid-area: skills;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.languages{
+    grid-area: languages;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+h4, p > i{
+    color: #009688;
+}
+h3{
+    color: grey;
+}
+
+.intro{
+    background-color: white;
+    /* height: fit-content; */
+    margin: 5px;
+    padding: 5px;
+}
+
+.experience{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    /* height: fit-content; */
+}
+
+.education{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    /* height: fit-content; */
+}
+
+ul >li{
+    font-size: smaller;
+}
+
+.twothirds-content{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    height: 800px;
+}
+footer>*{
+    background-color: #009688;
+}
+
+.icons{
+    text-align: center;
+    background-color: #757575;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer>*{
+    color: whitesmoke;
+}
+
+.bottom{
+    padding: 5px;
+    margin: 5px;
+}
+
+.submit{
+    text-align: center;
+}
+.name >a{
+    color: burlywood;
+}
